@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="divisionstyle.css">
+    <title>Support</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, nav {
+            width: 100%;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            max-width: 600px; /* Adjust the max-width based on your design */
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 8px;
+            margin-top: 10px; /* Add margin-top for space from the top */
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            margin-top: 5px; /* Add margin-top for space from the top */
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+        }
+
+        input[type="submit"] {
+            width: auto; /* Adjust as needed */
+        }
+
+        button {
+            margin-top: 10px; /* Adjust margin-top as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Support</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="WesternConference.html">Western Conference</a>
+        <a href="EasternConference.html">Eastern Conference</a>
+    </nav>
+
+    <main>
+        <form>
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required>
+
+            <label for="userHelp">What do you need help with?</label>
+            <textarea id="userHelp" name="userHelp" rows="4" required></textarea>
+
+            <button onclick="emailSubmitted()">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 NBA Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function emailSubmitted() {
+            var userNameValue = document.getElementById('userName').value;
+            var userEmailValue = document.getElementById('userEmail').value;
+            var userHelpValue = document.getElementById('userHelp').value;
+
+            if (userNameValue.trim() !== '' && userEmailValue.trim() !== '' && userHelpValue.trim() !== '') {
+                alert("A support ticket has been successfully submitted.");
+            } else {
+                alert("Please fill out all required fields.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

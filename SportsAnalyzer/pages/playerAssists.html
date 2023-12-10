@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="propsstyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh; /* Adjust the height as needed */
+        }
+
+        section {
+            text-align: center;
+        }
+
+        .oval-input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .oval-input {
+            border: 2px solid #333;
+            border-radius: 25px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .oval-submit {
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green color */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .oval-submit:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+    </style>
+    <title>Player Assists</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Player Assists</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="playerPoints.html">Points</a>
+        <a href="playerRebounds.html">Rebounds</a>
+        <a href="playerAssists.html">Assists</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome to the player assists section!</h2>
+            <p>Enter your desired player's name and click search.</p>
+        </section>
+    </main>
+
+    <div class="oval-input-container">
+        <input type="text" class="oval-input" placeholder="Enter player name here">
+        <button class="oval-submit">Submit</button>
+    </div>
+
+</body>
+
+</html>
