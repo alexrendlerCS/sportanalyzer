@@ -102,9 +102,49 @@
     </main>
 
     <div class="oval-input-container">
-        <input type="text" class="oval-input" placeholder="Enter player name here">
-        <button class="oval-submit">Submit</button>
+        <input type="text" class="oval-input" id="playerNameInput" placeholder="Enter player name here">
+        <button class="oval-submit" onclick="searchPlayer()">Submit</button>
     </div>
+
+    <!-- Display area for player stats -->
+    <div id="playerStatsContainer" style="text-align: center; margin-top: 20px;"></div>
+    <div style="height: 50px;"></div>
+
+    <script>
+        function searchPlayer() {
+            // Get the player name from the input field
+            var playerName = document.getElementById('playerNameInput').value;
+
+            // Perform some logic to fetch the player stats (replace this with your actual logic)
+            // For demonstration purposes, we'll just display a message with the player name
+            var playerStats = "Stats for " + playerName + ":<br>" +
+            "Game 1: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 2: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 3: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 4: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 5: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 6: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 7: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 8: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 9: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 10: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 11: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 12: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 13: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 14: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 15: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 16: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 17: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 18: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 19: Points - 20, Rebounds - 10, Assists - 5<br>" +
+            "Game 20: Points - 20, Rebounds - 10, Assists - 5&nbsp";
+
+
+            // Display the player stats in the designated container
+            document.getElementById('playerStatsContainer').innerHTML = playerStats;
+        }
+
+    </script>
 
 </body>
 
